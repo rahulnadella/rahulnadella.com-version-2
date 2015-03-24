@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial
+}
+
+body {
+  background: white;
+  font-size: 17px;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1, h2 {
+  font-family: "HelveticaNeueMedium", "HelveticaNeue-Medium", "Helvetica Neue Medium", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
+  font-weight: normal;
+  font-size: 22px;
+}
+
+#page {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -255px;
+  height: 510px;
+}
+
+@media only screen and (max-height: 560px),
+       only screen and (max-width: 578px) {
+  #page {
+    top: 14px;
+    margin-top: 0;
+  }
+}
+
+header {
+  position: absolute;
+  top: 48%;
+  right: 58%;
+  margin-top: -100px;
+  width: 240px;
+  text-align: center;
+  padding-top: 99px;
+}
+
+header #logo {
+  position: absolute;
+  top: -67px;
+  left: 50%;
+  margin-left: -102px;
+}
+
+header #logo g {
+  pointer-events: none;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+header p {
+  top: 67px;
+}
+
+header h1 {
+  color: #121301;
+}
+
+header p {
+  padding-top: 4px;
+  color: #7B7B7B;
+}
+
+#contact {
+  padding-top: 12px;
+}
+
+#contact a {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#contact a,
+#contact a svg {
+  width: 25px;
+  height: 19px;
+  cursor: pointer;
+}
+
+#contact a svg path {
+  fill: #7B7B7B;
+}
+
+#contact a:hover svg path {
+  fill: #121301;
+}
+
+#content {
+  position: absolute;
+  left: 50%;
+  width: 50%;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  color: #121301;
+  height: 30px;
+}
+
+section ul {
+  color: #7B7B7B;
+  line-height: 22px;
+  list-style: none;
+  padding-bottom: 5px;
+}
+
+section ul a {
+  color: #7B7B7B;
+  text-decoration: none;
+}
+
+section ul a:hover {
+  color: #121301;
+}
+
+section a.more {
+  font-size: 15px;
+  text-decoration: none;
+}
+
+section a.more svg {
+  width: 6px;
+  height: 10px;
+  margin-left: 7px;
+}
+
+section#articles a.more {
+  color: #27A0DB;
+}
+section#articles a.more .arrow {
+  fill: #27A0DB;
+}
+section#openSource a.more {
+  color: #C459F8;
+}
+section#openSource a.more .arrow {
+  fill: #C459F8;
+}
+section#experiments a.more {
+  color: #DD1223;
+}
+section#experiments a.more .arrow {
+  fill: #DD1223;
+}
+
+@media only screen and (max-width: 578px) {
+  header {
+    position: static;
+    top: 10px;
+    padding-bottom: 16px;
+    margin: 40px 24px 16px;
+    width: auto;
+    border-bottom: 1px solid hsla(0, 0%, 90%, 0);
+    -webkit-transition: border-bottom ease-in-out 200ms;
+    transition: border-bottom ease-in-out 200ms;
+  }
+  header.visible {
+    border-bottom-color: hsla(0, 0%, 90%, 1);
+  }
+  header #logo {
+    top: -33px;
+  }
+
+  header h1, header p {
+    left: 24px;
+    margin-left: 0;
+  }
+  #contact {
+    left: 252px;
+    margin-left: 0;
+  }
+  #content {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    margin-left: 0;
+    width: auto;
+  }
+  section,
+  section#openSource,
+  section#work {
+    width: 100%;
+    float: left;
+    clear: both;
+  }
+}
+
+
