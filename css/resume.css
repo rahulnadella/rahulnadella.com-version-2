@@ -1,61 +1,71 @@
+/*
+Resume.css provides the specific layout that 
+my resume will be displayed on the page. 
+This stylesheet uses a number of id and class 
+elements.
+
+@author rahulnadella
+*/
+
+/* The background color for the entire page is light gray */
 * {
   background-color: #E0E0E0;
 }
-
+/* Specify the paragraph layout */
 p {
 	margin-top: 25;
 	line-height: 1.25;
 }
-
+/* H1 is center at a font size that is italic */
 h1 {
 	text-align: center;
 	font-size: 2.5em;
 }
-
+/* Empty */
 h2 {
 
 }
-
+/* H4 designate margins for the header */
 h4 {
 	margin 5 0 0 0;
 }
-
+/* id headerlinks associated with div specify list style */
 div#headerlinks {
 	text-align: center;
 	list-style-position: inside;
 }
-
+/* id headerlinks associated with ol li specify margin style */
 div#header-links ol li {
   margin: 0 20px 20px 0;
   vertical-align: top;
 }
-
+/* id headerlinks associated with ul li specify margin style */
 div#header-links ul li {
   margin: 0 20px 20px 0;
   vertical-align: top;
 }
-
+/* class ident to 20 points */
 .indent {
 	text-indent: 20pt;
 }
-
+/* ol element has no list-style-type */
 ol {
   list-style-type: None;
 }
-
+/* set the style to Upper Roman for ol elements that are associated to class show */
 ol.show {
   list-style-type: upper-roman;
 }
-
+/* set the margins for li elements under the specified class associated ol */
 ol.show li {
   margin: 10 10px 10px 10;
   vertical-align: top;
 }
-
+/* a elemnent to have no decoration (ie underline, etc) */
 a {
   text-decoration: None;
 }
-
+/* hyperlink to be underline when user cursor points to it */
 a:hover {
   text-decoration: underline;
   cursor: pointer;
